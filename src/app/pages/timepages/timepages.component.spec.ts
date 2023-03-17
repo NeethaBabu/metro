@@ -2,7 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TimepagesComponent } from './timepages.component';
 
-describe('TimepagesComponent', () => {
+
+describe('TimePagesComponent', () => {
   let component: TimepagesComponent;
   let fixture: ComponentFixture<TimepagesComponent>;
 

@@ -1,50 +1,57 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomepagesComponent } from './pages/homepages/homepages.component';
-import { RoutespagesComponent } from './pages/routespages/routespages.component';
-import { BookingpagesComponent } from './pages/bookingpages/bookingpages.component';
-import { SigninpagesComponent } from './pages/signinpages/signinpages.component';
-import { SignuppagesComponent } from './pages/signuppages/signuppages.component';
-import { ContactpagesComponent } from './pages/contactpages/contactpages.component';
-import { PaymentpagesComponent } from './pages/paymentpages/paymentpages.component';
+import { HomePagesComponent } from './pages/homepages/homepages.component';
+import { RoutesPagesComponent } from './pages/routespages/routespages.component';
+import { BookingPagesComponent } from './pages/bookingpages/bookingpages.component';
+import { SigninPagesComponent } from './pages/signinpages/signinpages.component';
+import { SignupPagesComponent } from './pages/signuppages/signuppages.component';
+import { ContactPagesComponent } from './pages/contactpages/contactpages.component';
 
 import { TimepagesComponent } from './pages/timepages/timepages.component';
-import { SingleComponent } from './pages/single/single.component';
+import { SinglePagesComponent } from './pages/single/single.component';
+import { PaymentPagesComponent } from './pages/paymentpages/paymentpages.component';
 
-
-
-
+// import { FormPageComponent } from './pages/form-page/form-page.component';
+import { AngularFireAuthGuard,redirectUnauthorizedTo,redirectLoggedInTo} from '@angular/fire/compat/auth-guard';
 
 const routes: Routes = [
   {
-    path:'',component:HomepagesComponent
+    path:'',component:HomePagesComponent
   },
   {
-    path:'contact',component:ContactpagesComponent
+    path:'contact',component:ContactPagesComponent
   },
   {
-    path:'signup',component:SignuppagesComponent
+    path:'signup',component:SignupPagesComponent
   },
   {
-    path:'signin',component:SigninpagesComponent
+    path:'signin',component:SigninPagesComponent
   },
   {
-    path:'booking',component:BookingpagesComponent
+    path:'booking',component:BookingPagesComponent
   },
   {
-    path:'routes',component:RoutespagesComponent
-  },
-  {
-    path:'paymentpages',component:PaymentpagesComponent
+    path:'routes',component:RoutesPagesComponent
   },
  
   {
     path:'time',component:TimepagesComponent
   },
   {
-    path:'single',component:SingleComponent
-  }
+    path:'single',component:SinglePagesComponent
+  },
+ 
+  {
+    path:'payment',component:PaymentPagesComponent
+  },
+  
+  // {
+  //   path:'form',component:FormPageComponent
+  // },
+ 
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

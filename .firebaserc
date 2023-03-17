@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "metro-125da": {
+      "hosting": {
+        "pro": [
+          "metro-125da"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "metro-125da"
+  }
+}

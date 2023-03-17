@@ -3,12 +3,13 @@ import { ActivatedRoute,Router } from '@angular/router';
 import { HeroService } from 'src/app/hero.service';
 import { data } from 'src/assets/data';
 
+
 @Component({
   selector: 'app-single',
   templateUrl: './single.component.html',
   styleUrls: ['./single.component.css']
 })
-export class SingleComponent {
+export class SinglePagesComponent {
   constructor(private hero:HeroService) {}
 
   data=this.hero.giveData()
