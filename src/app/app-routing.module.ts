@@ -13,6 +13,7 @@ import { PaymentPagesComponent } from './pages/paymentpages/paymentpages.compone
 
 // import { FormPageComponent } from './pages/form-page/form-page.component';
 import { AngularFireAuthGuard,redirectUnauthorizedTo,redirectLoggedInTo} from '@angular/fire/compat/auth-guard';
+import { QrcodeComponent } from './pages/qrcode/qrcode.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,9 @@ const routes: Routes = [
   {
     path:'payment',component:PaymentPagesComponent
   },
+  {
+    path:'qrcode',component:QrcodeComponent
+  }
   
   // {
   //   path:'form',component:FormPageComponent

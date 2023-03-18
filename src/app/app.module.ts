@@ -22,6 +22,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FIREBASE_OPTIONS} from '@angular/fire/compat';
+import { QrcodeComponent } from './pages/qrcode/qrcode.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { FIREBASE_OPTIONS} from '@angular/fire/compat';
     // TimePagesComponent,
     SinglePagesComponent,
     PaymentPagesComponent,
+    QrcodeComponent,
  
     // FormPageComponent,
   
